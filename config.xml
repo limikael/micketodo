@@ -16,6 +16,9 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+
+    <hook type="before_prepare" src="hooks/bundle.sh" />
+
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
