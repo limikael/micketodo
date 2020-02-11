@@ -23,4 +23,12 @@ let a=(
 	</AppContext>
 );
 
-render(a, document.body);
+function start() {
+	render(a, document.body);
+}
+
+if (window.hasOwnProperty("cordova"))
+	document.addEventListener('deviceready',start);
+
+else
+	start();
