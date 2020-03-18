@@ -1,4 +1,4 @@
 platforms/**
 plugins/**
 node_modules
-www-index.js
+www/index.js
